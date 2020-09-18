@@ -9,14 +9,14 @@ public class MyBPP implements BeanPostProcessor
     @Override
     public Object postProcessBeforeInitialization(Object bean, String beanName)
     {
-        System.out.println(beanName + " будет добавлен в AppContext...");
+        System.out.println(beanName + " is about to be added to AppContext...");
         return bean;
     }
 
     @Override
     public Object postProcessAfterInitialization(Object bean, String beanName)
     {
-        System.out.println(beanName + " успешно добавлен в AppContext!");
+        System.out.println(beanName + " is successfully added to AppContext!");
         return bean;
     }
 }

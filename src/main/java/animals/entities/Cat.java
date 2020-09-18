@@ -10,7 +10,7 @@ import javax.swing.plaf.IconUIResource;
 @Component
 public class Cat
 {
-    private String name = "Барсик";
+    private String name = "Barsik";
 
     public String getName()
     {
@@ -25,12 +25,12 @@ public class Cat
     /*@PostConstruct
     private void construct()
     {
-        System.out.println("Кот добавлен в AppContext...");
+        System.out.println("Cat is added to AppContext...");
     }*/
 
     @PreDestroy
     private void destroy()
     {
-        System.out.println("Кот сейчас будет удален из AppContext...");
+        System.out.println("Cat is about to be removed from AppContext...");
     }
 }

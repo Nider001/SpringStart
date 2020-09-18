@@ -11,6 +11,6 @@ public class MyBFPP implements BeanFactoryPostProcessor
     @Override
     public void postProcessBeanFactory(ConfigurableListableBeanFactory configurableListableBeanFactory) throws BeansException
     {
-        System.out.println("BeanFactory создан!");
+        System.out.println("BeanFactoryPostProcessor did something.");
     }
 }

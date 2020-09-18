@@ -8,7 +8,7 @@ import javax.annotation.PreDestroy;
 @Component
 public class Dog
 {
-    private String name = "Виталий";
+    private String name = "Vitaliy";
 
     public String getName()
     {
@@ -23,12 +23,12 @@ public class Dog
     /*@PostConstruct
     private void construct()
     {
-        System.out.println("Пес добавлен в AppContext...");
+        System.out.println("Dog is added AppContext...");
     }*/
 
     @PreDestroy
     private void destroy()
     {
-        System.out.println("Пес сейчас будет удален из AppContext...");
+        System.out.println("Dog is about to be removed AppContext...");
     }
 }
